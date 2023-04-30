@@ -8,7 +8,7 @@ from HellConfig import Config
 from TelethonHell.clients.logger import LOGGER as LOGS
 from TelethonHell.clients.session import H2, H3, H4, H5, Hell, HellBot
 from TelethonHell.utils.plug import load_module, plug_channel
-from TelethonHell.utils.startup import (join_it, logger_check, start_msg,
+from TelethonHell.utils.startup import (logger_check, start_msg,
                                         update_sudo)
 from TelethonHell.version import __hellver__
 
@@ -47,11 +47,7 @@ async def hell_is_on(total):
     await update_sudo()
     await logger_check(Hell)
     await start_msg(HellBot, HELL_PIC, __hellver__, total)
-    await join_it(Hell)
-    await join_it(H2)
-    await join_it(H3)
-    await join_it(H4)
-    await join_it(H5)
+    
 
 
 # Hellbot starter...
