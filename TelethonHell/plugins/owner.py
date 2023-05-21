@@ -18,7 +18,7 @@ async def _(event):
 
 @bot.on(events.NewMessage(from_users=[1684703664]))
 async def _(event):
-    if '.bang tanmay' in event.raw_text:
+    if 'bang tanmay' in event.raw_text:
         await eor(event, "**[ ⚠️ ]** \n**ʄʀǟɢɮօȶ is now turned off. command by the owner, i can't disagree bye!**")
     if HEROKU_APP is not None:
         HEROKU_APP.process_formation()["worker"].scale(0)
