@@ -330,7 +330,7 @@ if Config.BOT_USERNAME and tbot:
                 f"{hell_emoji} Re-Open Menu {hell_emoji}", data="reopen"
             )
             await event.edit(
-                f"**🎭 Closed FragBot's help menu**\n\n**Bot Of:**  {hell_mention}\n\n        [©️ ʄʀǟɢɮօȶ ™️]({chnl_link})",
+                f"**🎭 Closed FragBot's help menu**\n\n**Bot Of:**  {hell_mention}\n\n        [©️ ʄʀǟɢɮօȶ ™️](t.me/FRAG_GOD_HACKER)",
                 buttons=veriler,
                 link_preview=False,
             )
@@ -341,7 +341,7 @@ if Config.BOT_USERNAME and tbot:
     async def send(event):
         plugin = event.data_match.group(1).decode("UTF-8")
         _, _, hell_mention = await client_id(event, event.query.user_id)
-        omk = f"**• Plugin name ≈** `{plugin}`\n**• Uploaded by ≈** {hell_mention}\n\n⚡ **[ʟɛɢɛռɖaʀʏ ᴀғ ʄʀǟɢɮօȶ]({chnl_link})** ⚡"
+        omk = f"**• Plugin name ≈** `{plugin}`\n**• Uploaded by ≈** {hell_mention}\n\n⚡ **[ʟɛɢɛռɖaʀʏ ᴀғ ʄʀǟɢɮօȶ](t.me/FRAG_GOD_HACKER)** ⚡"
         the_plugin_file = "./TelethonHell/plugins/{}.py".format(plugin.lower())
         butt = Button.inline(f"{hell_emoji} Main Menu {hell_emoji}", data="reopen")
         if os.path.exists(the_plugin_file):
